@@ -75,7 +75,7 @@ async function sendDailyFortune() {
 }
 
 // ===== ตั้งเวลา 7:00 ทุกวัน =====
-cron.schedule("0 7 * * *", () => {
+cron.schedule("0 0 * * *", () => {
   sendDailyFortune();
 });
 
